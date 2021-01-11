@@ -3,10 +3,10 @@ var student = {
   type: "student"
 };
 
-document.addEventListener('DOMContentLoaded', contentLoaded);
+document.addEventListener('DOMContentLoaded', contentLoaded); // DOMContentLoaded triggers the function when the entire page is loaded and is instasiated inside the borwser's memory
 
 function contentLoaded(event) {
-  document.getElementById('name').addEventListener("keyup", keyUp);
+  document.getElementById('name').addEventListener("keyup", keyUp);  //triggers up a key listener
 }
 
 function keyUp(event) {
@@ -14,7 +14,7 @@ function keyUp(event) {
 }
 
 function calculateNumericOutput() {
-  student.name = document.getElementById('name').value;
+  student.name = document.getElementById('name').value; //grabs the value of the input field (id="name") into the object student(name)
 
   var totalNameValue = 0;
   for (var i = 0; i < student.name.length; i++) {
